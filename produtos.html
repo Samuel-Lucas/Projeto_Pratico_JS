@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Games Shelter - Produtos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <a href="pagina_inicial.html" class="logo">
+                    <h3>Games<br><i>Shelter</i></h3>
+                </a>
+            </div>
+
+            <div class="menu_item"><a href="produtos.html"><h3>Produtos</h3></a></div>
+            <div class="menu_item"><a href="lojas.html"><h3>Lojas</h3></a></div>
+            <div class="menu_item"><a href="fale_conosco.html"><h3>Fale Conosco</h3></a></div>
+        </header>
+
+        <section id="produtos">
+
+            <div class="lista">
+
+                <h3>Categorias</h3>
+
+                <ul>
+                    <li onclick="mostraTodos()">Todos</li>
+                    <li onclick="mostraComputadores()">Computadores</li>
+                    <li onclick="mostraNotes()">Notebooks</li>
+                    <li onclick="mostraVgs()">Videogames</li>
+                    <li onclick="mostraAcs()">Acessórios</li>
+                </ul>
+
+            </div>
+                
+            <table id="tabela_todos">
+                <tr>
+                    <td>
+                        <img src="images/pc.jpg" width="20%">
+                        <p>Pc Gamer G-Fire Htg-686 A6 7480 8Gb <br>(Radeon R5 2Gb) SSD 240Gb monitor 18"</p>
+                        <p style="border: 0.5px solid gray; width: 300px;"></p>
+                        <p><del>R$ 4199</del></p>
+                        <p class="preco_descontado">R$ 3499</p>
+                    </td>
+
+                    <td>
+                        <img src="images/note.jpg" width="45%">
+                        <p>Notebook Gamer Lenovo Intel Core i7-9750H 8GB 1TB Placa GTX 1050 15,6"<br>
+                        Windows 10 L340</p>
+                        <p style="border: 0.5px solid gray; width: 270px;"></p>
+                        <p><del>R$ 4399</del></p>
+                        <p class="preco_descontado">R$ 3899</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="images/ps5.jpg" width="20%">
+                        <p>Console Playstation 5 <br> SSD 1 TB, 1 controle</p>
+                        <p style="border: 0.5px solid gray; width: 155px;"></p>
+                        <p><del>R$ 4999</del></p>
+                        <p class="preco_descontado">R$ 4499</p>
+                    </td>
+
+                    <td>
+                        <img src="images/teclado_mecanico.jpg" width="40%">
+                        <p>Teclado Mecânico Gamer Redragon Kala RGB, Switch Red, ABNT-2, K557RGB</p>
+                        <p style="border: 0.5px solid gray; width: 260px;"></p>
+                        <p><del>R$ 159</del></p>
+                        <p class="preco_descontado">R$ 119</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="images/xsx.jpg" width="20%">
+                        <p>Console Xbox Series X <br> SSD 1 TB, 1 controle</p>
+                        <p style="border: 0.5px solid gray; width: 170px;"></p>
+                        <p><del>R$ 4999</del></p>
+                        <p class="preco_descontado">R$ 4499</p>
+                    </td>
+
+                    <td>
+                        <img src="images/mouse.jpg" width="40%">
+                        <p>Mouse Gamer Redragon Ranger Black RGB 12400dpi M910-RGB</p>
+                        <p style="border: 0.5px solid gray; width: 250px;"></p>
+                        <p><del>R$ 159</del></p>
+                        <p class="preco_descontado">R$ 99</p>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="tabela_computadores">
+                <tr>
+                    <td>
+                        <img src="images/pc.jpg" width="20%">
+                        <p>Pc Gamer G-Fire Htg-686 A6 7480 8Gb <br>(Radeon R5 2Gb) SSD 240Gb monitor 18"</p>
+                        <p style="border: 0.5px solid gray; width: 300px;"></p>
+                        <p><del>R$ 4199</del></p>
+                        <p class="preco_descontado">R$ 3499</p>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="tabela_notebooks">
+                <tr>
+                    <td>
+                        <img src="images/note.jpg" width="45%">
+                        <p>Notebook Gamer Lenovo Intel Core i7-9750H 8GB 1TB Placa GTX 1050 15,6"<br>
+                        Windows 10 L340</p>
+                        <p style="border: 0.5px solid gray; width: 270px;"></p>
+                        <p><del>R$ 4399</del></p>
+                        <p class="preco_descontado">R$ 3899</p>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="tabela_vgs">
+                <tr>
+                    <td>
+                        <img src="images/ps5.jpg" width="20%">
+                        <p>Console Playstation 5 <br> SSD 1 TB, 1 controle</p>
+                        <p style="border: 0.5px solid gray; width: 155px;"></p>
+                        <p><del>R$ 4999</del></p>
+                        <p class="preco_descontado">R$ 4499</p>
+                    </td>
+
+                    <td>
+                        <img src="images/xsx.jpg" width="20%">
+                        <p>Console Xbox Series X <br> SSD 1 TB, 1 controle</p>
+                        <p style="border: 0.5px solid gray; width: 170px;"></p>
+                        <p><del>R$ 4999</del></p>
+                        <p class="preco_descontado">R$ 4499</p>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="tabela_acs">
+                <tr>
+                    <td>
+                        <img src="images/mouse.jpg" width="40%">
+                        <p>Mouse Gamer Redragon Ranger Black RGB 12400dpi M910-RGB</p>
+                        <p style="border: 0.5px solid gray; width: 250px;"></p>
+                        <p><del>R$ 159</del></p>
+                        <p class="preco_descontado">R$ 99</p>
+                    </td>
+
+                    <td>
+                        <img src="images/teclado_mecanico.jpg" width="40%">
+                        <p>Teclado Mecânico Gamer Redragon Kala RGB, Switch Red, ABNT-2, K557RGB</p>
+                        <p style="border: 0.5px solid gray; width: 260px;"></p>
+                        <p><del>R$ 159</del></p>
+                        <p class="preco_descontado">R$ 119</p>
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+
+        <footer style="margin-top: 430px;">
+            <div>
+                <h4 style="font-size: 20px;">Atendimento</h4>
+                <p>De segunda à Sexta-feira<br>9h às 18h (Exceto feriados)</p>
+
+                <p>(11) 94444-4444<br>games.shelter@hotmail.com</p>
+            </div>
+
+            <div>
+                <p style="text-align: center; margin-top: 75px; font-size: 20px; text-shadow: 2px 2px black;">
+                    &copy; Games Shelter
+                </p>  
+            </div>
+
+            <div>
+                <h4>Pague com:</h4>
+
+                <ul>
+                    <li>
+                        <img src="images/banco_inter.png" width="40px" style="padding-bottom: 5px;">
+                    </li>
+    
+                    <li>
+                        <img src="images/american_express.png" width="35px">
+                    </li>
+    
+                    <li>
+                        <img src="images/visa.jpg" width="40px" style="padding-bottom: 4px;">
+                    </li>
+    
+                    <li>
+                        <img src="images/mastercard.png" width="45px" style="padding-bottom: 6px;">
+                    </li>
+    
+                    <li>
+                        <img src="images/pagseguro.png" width="40px">
+                    </li>
+    
+                    <li>
+                        <img src="images/elo.png" width="40px">
+                    </li>
+    
+                    <li>
+                        <img src="images/boleto.png" width="40px">
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><img src="images/ebit.jpg" width="50px"></li>
+                    <li><img src="images/compra_segura.jpg" width="55px" style="padding-bottom: 8px;"></li>
+                    <li><img src="images/safe.jpg" width="55px" style="padding-bottom: 8px;"></li>
+                </ul>
+            </div>
+        </footer> 
+
+        <script src="script.js"></script>
+    </body>
+</html>
