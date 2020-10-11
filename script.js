@@ -4,11 +4,23 @@ let notes = document.getElementById('tabela_notebooks')
 let videoGame = document.getElementById('tabela_vgs')
 let acessorios = document.getElementById('tabela_acs')
 
+function mudaEstilo() {
+    let itemMenu = event.target
+
+    itemMenu.addEventListener("mouseenter", function() {
+        itemMenu.style.color = 'black'
+    })
+
+    itemMenu.addEventListener("mouseout", function() {
+        itemMenu.style.color = 'white'
+    })
+}
+
 function mudaEstilo2() {
     let li = event.target
 
     li.addEventListener("mouseenter", function() {
-        li.style.backgroundColor = 'gray'
+        li.style.backgroundColor = '#7575a3'
         li.style.color = 'white'
         li.style.textDecoration = 'underline'
         li.style.padding = '8px'
@@ -21,6 +33,21 @@ function mudaEstilo2() {
         li.style.padding = '0px'
     })
 }
+
+
+
+function alteraImg() {
+    let img = event.target
+
+  /*  img.style.display = 'block'  */
+   /* img.style.width = "190px"
+    img.style.height = "190px"  */
+
+    let url = img.getAttribute('src')
+
+    window.open(url,'Image','width=450px,height=450px,resizable=1')  
+}
+
 
 pcs.style.display = 'none'
 notes.style.display = 'none'

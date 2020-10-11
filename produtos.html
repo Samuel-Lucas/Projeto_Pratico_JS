@@ -14,9 +14,9 @@
                 </a>
             </div>
 
-            <div class="menu_item"><a href="produtos.html"><h3>Produtos</h3></a></div>
-            <div class="menu_item"><a href="lojas.html"><h3>Lojas</h3></a></div>
-            <div class="menu_item"><a href="fale_conosco.html"><h3>Fale Conosco</h3></a></div>
+            <div class="menu_item" onmouseover="mudaEstilo()"><a href="produtos.html"><h3>Produtos</h3></a></div>
+            <div class="menu_item" onmouseover="mudaEstilo()"><a href="lojas.html"><h3>Lojas</h3></a></div>
+            <div class="menu_item" onmouseover="mudaEstilo()"><a href="fale_conosco.html"><h3>Fale Conosco</h3></a></div>
         </header>
 
         <section id="produtos">
@@ -38,15 +38,15 @@
             <table id="tabela_todos">
                 <tr>
                     <td>
-                        <img src="images/pc.jpg" width="20%">
-                        <p>Pc Gamer G-Fire Htg-686 A6 7480 8Gb <br>(Radeon R5 2Gb) SSD 240Gb monitor 18"</p>
+                        <img src="images/pc.jpg" onclick="alteraImg()" width="30%">
+                        <p>Pc Gamer G-Fire Htg-686 A6 7480 8Gb <br> (Radeon R5 2Gb) SSD 240Gb monitor 18"</p>
                         <p style="border: 0.5px solid gray; width: 300px;"></p>
                         <p><del>R$ 4199</del></p>
                         <p class="preco_descontado">R$ 3499</p>
                     </td>
 
                     <td>
-                        <img src="images/note.jpg" width="45%">
+                        <img src="images/note.jpg" onclick="alteraImg()" width="45%">
                         <p>Notebook Gamer Lenovo Intel Core i7-9750H 8GB 1TB Placa GTX 1050 15,6"<br>
                         Windows 10 L340</p>
                         <p style="border: 0.5px solid gray; width: 270px;"></p>
@@ -57,7 +57,7 @@
 
                 <tr>
                     <td>
-                        <img src="images/ps5.jpg" width="20%">
+                        <img src="images/ps5.jpg" onclick="alteraImg()" width="30%">
                         <p>Console Playstation 5 <br> SSD 1 TB, 1 controle</p>
                         <p style="border: 0.5px solid gray; width: 155px;"></p>
                         <p><del>R$ 4999</del></p>
@@ -65,7 +65,7 @@
                     </td>
 
                     <td>
-                        <img src="images/teclado_mecanico.jpg" width="40%">
+                        <img src="images/teclado_mecanico.jpg" onclick="alteraImg()" width="40%">
                         <p>Teclado Mecânico Gamer Redragon Kala RGB, Switch Red, ABNT-2, K557RGB</p>
                         <p style="border: 0.5px solid gray; width: 260px;"></p>
                         <p><del>R$ 159</del></p>
@@ -75,7 +75,7 @@
 
                 <tr>
                     <td>
-                        <img src="images/xsx.jpg" width="20%">
+                        <img src="images/xsx.jpg" onclick="alteraImg()" width="25%">
                         <p>Console Xbox Series X <br> SSD 1 TB, 1 controle</p>
                         <p style="border: 0.5px solid gray; width: 170px;"></p>
                         <p><del>R$ 4999</del></p>
@@ -83,7 +83,7 @@
                     </td>
 
                     <td>
-                        <img src="images/mouse.jpg" width="40%">
+                        <img src="images/mouse.jpg" onclick="alteraImg()" width="40%">
                         <p>Mouse Gamer Redragon Ranger Black RGB 12400dpi M910-RGB</p>
                         <p style="border: 0.5px solid gray; width: 250px;"></p>
                         <p><del>R$ 159</del></p>
@@ -95,7 +95,7 @@
             <table id="tabela_computadores">
                 <tr>
                     <td>
-                        <img src="images/pc.jpg" width="20%">
+                        <img src="images/pc.jpg" width="30%">
                         <p>Pc Gamer G-Fire Htg-686 A6 7480 8Gb <br>(Radeon R5 2Gb) SSD 240Gb monitor 18"</p>
                         <p style="border: 0.5px solid gray; width: 300px;"></p>
                         <p><del>R$ 4199</del></p>
@@ -120,7 +120,7 @@
             <table id="tabela_vgs">
                 <tr>
                     <td>
-                        <img src="images/ps5.jpg" width="20%">
+                        <img src="images/ps5.jpg" width="30%">
                         <p>Console Playstation 5 <br> SSD 1 TB, 1 controle</p>
                         <p style="border: 0.5px solid gray; width: 155px;"></p>
                         <p><del>R$ 4999</del></p>
@@ -128,7 +128,7 @@
                     </td>
 
                     <td>
-                        <img src="images/xsx.jpg" width="20%">
+                        <img src="images/xsx.jpg" width="40%">
                         <p>Console Xbox Series X <br> SSD 1 TB, 1 controle</p>
                         <p style="border: 0.5px solid gray; width: 170px;"></p>
                         <p><del>R$ 4999</del></p>
@@ -159,7 +159,7 @@
 
         </section>
 
-        <footer style="margin-top: 430px;">
+        <footer style="margin-top: 450px;">
             <div>
                 <h4 style="font-size: 20px;">Atendimento</h4>
                 <p>De segunda à Sexta-feira<br>9h às 18h (Exceto feriados)</p>

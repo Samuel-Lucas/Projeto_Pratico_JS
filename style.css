@@ -37,6 +37,7 @@ i {
 
 .menu_item a {
     color: white;
+    text-decoration: none;
 }
 
 #boas_vindas {
@@ -106,7 +107,7 @@ table {
 
 .lista ul li {
     list-style: disc;
-    margin: 10px;
+    margin: 12px;
     cursor: pointer;
 }
 
