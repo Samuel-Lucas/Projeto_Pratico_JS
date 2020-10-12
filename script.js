@@ -35,19 +35,22 @@ function mudaEstilo2() {
 }
 
 
-
 function alteraImg() {
     let img = event.target
 
-  /*  img.style.display = 'block'  */
-   /* img.style.width = "190px"
-    img.style.height = "190px"  */
+    img.addEventListener("mouseenter", function() {
+        img.style.cursor = 'pointer'
+    })
 
-    let url = img.getAttribute('src')
+    img.addEventListener("mouseout", function() {
+        img.style.cursor = 'none'
+    })
 
-    window.open(url,'Image','width=450px,height=450px,resizable=1')  
+    img.addEventListener("click", function() {
+        let url = img.getAttribute('src')
+        window.open(url,'Image','width=450px,height=450px,resizable=1') 
+    }) 
 }
-
 
 pcs.style.display = 'none'
 notes.style.display = 'none'
