@@ -34,21 +34,13 @@ function mudaEstilo2() {
     })
 }
 
-
 function alteraImg() {
     let img = event.target
 
-    img.addEventListener("mouseenter", function() {
-        img.style.cursor = 'pointer'
-    })
-
-    img.addEventListener("mouseout", function() {
-        img.style.cursor = 'none'
-    })
-
     img.addEventListener("click", function() {
         let url = img.getAttribute('src')
-        window.open(url,'Image','width=450px,height=450px,resizable=1') 
+
+        window.open(url,'Image','width=450px,height=450px,resizable=1')
     }) 
 }
 

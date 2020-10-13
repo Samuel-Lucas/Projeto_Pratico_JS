@@ -99,6 +99,10 @@ table {
     padding-top: 45px;
 }
 
+table img {
+    cursor: pointer;
+}
+
 .lista {
     width: 20%;
     height: 25%;
