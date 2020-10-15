@@ -111,8 +111,9 @@ table img {
 
 .lista ul li {
     list-style: disc;
-    margin: 12px;
+    margin: 10px;
     cursor: pointer;
+    padding-left: 10px;
 }
 
 .preco_descontado {
