@@ -1,8 +1,30 @@
-let todos = document.getElementById('tabela_todos')
-let pcs = document.getElementById('tabela_computadores')
-let notes = document.getElementById('tabela_notebooks')
-let videoGame = document.getElementById('tabela_vgs')
-let acessorios = document.getElementById('tabela_acs')
+let todos = document.querySelector('#todos')
+let pcs = document.querySelector('#computadores')
+let notes = document.querySelector('#notebooks')
+let videoGame = document.querySelector('#videogames')
+let acessorios = document.querySelector('#acessorios')
+
+pcs.style.display = 'none'
+notes.style.display = 'none'
+videoGame.style.display = 'none'
+acessorios.style.display = 'none'
+
+function exibirCategoria(categoria) {
+    
+    let tabelas = document.querySelectorAll('table')
+    
+    for(let i = 0; i < tabelas.length; i++) {
+
+        if(tabelas[i].id == categoria) {
+
+            tabelas[i].style.display = 'block'
+
+        } else {
+            
+            tabelas[i].style.display = 'none'
+        }
+    }
+}
 
 function mudaEstilo() {
     let itemMenu = event.target
@@ -40,49 +62,4 @@ function alteraImg() {
     let url = img.getAttribute('src')
 
     window.open(url,'Image','width=450px,height=450px,resizable=1')
-}
-
-pcs.style.display = 'none'
-notes.style.display = 'none'
-videoGame.style.display = 'none'
-acessorios.style.display = 'none'
-
-function mostraTodos() {
-    todos.style.display = 'block'
-    pcs.style.display = 'none'
-    notes.style.display = 'none'
-    videoGame.style.display = 'none'
-    acessorios.style.display = 'none'
-}
-
-function mostraComputadores() {
-    todos.style.display = 'none'
-    pcs.style.display = 'block'
-    notes.style.display = 'none'
-    videoGame.style.display = 'none'
-    acessorios.style.display = 'none'
-}
-
-function mostraNotes() {
-    todos.style.display = 'none'
-    pcs.style.display = 'none'
-    notes.style.display = 'block'
-    videoGame.style.display = 'none'
-    acessorios.style.display = 'none'
-}
-
-function mostraVgs() {
-    todos.style.display = 'none'
-    pcs.style.display = 'none'
-    notes.style.display = 'none'
-    videoGame.style.display = 'block'
-    acessorios.style.display = 'none'
-}
-
-function mostraAcs() {
-    todos.style.display = 'none'
-    pcs.style.display = 'none'
-    notes.style.display = 'none'
-    videoGame.style.display = 'none'
-    acessorios.style.display = 'block'
 }

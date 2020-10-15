@@ -26,16 +26,16 @@
                 <h3>Categorias</h3>
 
                 <ul>
-                    <li onmouseover="mudaEstilo2()" onclick="mostraTodos()">Todos</li>
-                    <li onmouseover="mudaEstilo2()" onclick="mostraComputadores()">Computadores</li>
-                    <li onmouseover="mudaEstilo2()" onclick="mostraNotes()">Notebooks</li>
-                    <li onmouseover="mudaEstilo2()" onclick="mostraVgs()">Videogames</li>
-                    <li onmouseover="mudaEstilo2()" onclick="mostraAcs()">Acessórios</li>
+                    <li onmouseover="mudaEstilo2()" onclick="exibirCategoria('todos')">Todos</li>
+                    <li onmouseover="mudaEstilo2()" onclick="exibirCategoria('computadores')">Computadores</li>
+                    <li onmouseover="mudaEstilo2()" onclick="exibirCategoria('notebooks')">Notebooks</li>
+                    <li onmouseover="mudaEstilo2()" onclick="exibirCategoria('videogames')">Videogames</li>
+                    <li onmouseover="mudaEstilo2()" onclick="exibirCategoria('acessorios')">Acessórios</li>
                 </ul>
 
             </div>
                 
-            <table id="tabela_todos">
+            <table id="todos">
                 <tr>
                     <td>
                         <img src="images/pc.jpg" onclick="alteraImg()" width="30%">
@@ -92,7 +92,7 @@
                 </tr>
             </table>
 
-            <table id="tabela_computadores">
+            <table id="computadores">
                 <tr>
                     <td>
                         <img src="images/pc.jpg" onclick="alteraImg()" width="25%">
@@ -104,7 +104,7 @@
                 </tr>
             </table>
 
-            <table id="tabela_notebooks">
+            <table id="notebooks">
                 <tr>
                     <td>
                         <img src="images/note.jpg" onclick="alteraImg()" width="35%">
@@ -117,7 +117,7 @@
                 </tr>
             </table>
 
-            <table id="tabela_vgs">
+            <table id="videogames">
                 <tr>
                     <td>
                         <img src="images/ps5.jpg" onclick="alteraImg()" width="30%">
@@ -137,7 +137,7 @@
                 </tr>
             </table>
 
-            <table id="tabela_acs">
+            <table id="acessorios">
                 <tr>
                     <td>
                         <img src="images/mouse.jpg" onclick="alteraImg()" width="40%">
