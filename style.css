@@ -89,18 +89,26 @@ footer ul {
 /* Página de produtos */
 
 #produtos {
-    width: 80%;
-    height: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
 }
 
-table {
-    padding-top: 45px;
+#container {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 790px;
+    height: 100%;
 }
 
-table img {
+#container img {
     cursor: pointer;
+}
+
+.item_prod {
+    margin: 20px;
+    width: 345px;
 }
 
 .lista {

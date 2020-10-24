@@ -31,18 +31,16 @@ function mudaEstilo2() {
 }
 
 function exibirCategoria(categoria) {
-    
-    let tabelas = document.querySelectorAll('table')
-    
-    for(let i = 0; i < tabelas.length; i++) {
 
-        if(tabelas[i].id == categoria) {
+    let container = document.querySelectorAll('#container')
+    let elemento = document.querySelector('.'+categoria)
 
-            tabelas[i].style.display = 'block'
+    for(let i = 0; i < container.length; i++) {
 
+        if(container[i] == elemento) {
+            container[i].style.display = 'flex'
         } else {
-            
-            tabelas[i].style.display = 'none'
+            container[i].style.display = 'none'
         }
     }
 }
